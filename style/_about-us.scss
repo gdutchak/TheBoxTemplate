@@ -1,0 +1,56 @@
+.about-us {
+position: relative;
+padding: 30px 0 80px;
+}
+
+.about-us__img {
+width: 362px;
+}
+
+.about-us__thumb {
+position: absolute;
+top: 45px;
+right: 45px;
+width: 196px;
+padding: 20px 24px 24px 16px;
+background-color: var(--accent-color);
+}
+
+.about-us__title {
+margin-bottom: 15px;
+
+font-weight: 700;
+font-size: 15px;
+line-height: 1.8;
+color: var(--white-color);
+}
+
+.about-us__history {
+font-size: 8px;
+line-height: 1.2;
+color: var(--white-color);
+
+&:last-of-type{
+    margin-bottom: 30px;
+}
+}
+
+.about-us__link {
+width: 88px;
+padding: 6px 8px;
+background-color: var(--white-color);
+border-radius: 1px;
+font-weight: 600;
+font-size: 7px;
+line-height: 1.1;
+text-align: center;
+color: var(--accent-color);
+transition: scale 500ms ease-in;
+
+&:hover, &:focus {
+    transform: scale(1.4);
+    background-color: #d2e5e6dd;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+}
+}

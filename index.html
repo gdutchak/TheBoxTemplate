@@ -4,245 +4,250 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- <title>Document</title> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
-    <header>
-        <div>
-            <svg>
-                <use href=""></use>
-            </svg>
-            <span>TheBox</span>
-        </div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#projects">Projects</a>
-            <a href="#service">Services</a>
-            <a href="#contact">Contact Us</a>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <svg class="logo__icon" width="15" height="19">
+                    <use href="./images/sprite.svg#icon-logo"></use>
+                </svg>
+                <span class="logo__text">TheBox</span>
+            </div>
+        
+        <nav class="main-nav">
+            <a href="#home" class="main-nav__link">Home</a>
+            <a href="#about" class="main-nav__link">About Us</a>
+            <a href="#projects" class="main-nav__link">Projects</a>
+            <a href="#service" class="main-nav__link">Services</a>
+            <a href="#contact" class="main-nav__link">Contact Us</a>
         </nav>
+    </div>
     </header>
     <main>
-        <section id="home">
-            <div>
-                <h1>Building things is our mission.</h1>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1 class="hero__title">Building things is our mission.</h1>
             </div>
             <!-- carousel js -->
         </section>
-        <section>
-            <div>
-                <h2>Our Reputation</h2>
-                    <ul>
-                        <li>
-                        <svg>
-                            <use href=""></use>
+        <section class="reputation">
+            <div class="container">
+                <h2 class="reputation__title">Our Reputation</h2>
+                    <ul class="reputation__list">
+                        <li class="reputation__item">
+                        <svg class="reputation__icon" width="16" height="16">
+                            <use href="./images/sprite.svg#icon-serviceteams"></use>
                         </svg>
-                        <h3>Best Services</h3>
-                        <p>Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
+                        <h3 class="reputation__item-title">Best Services</h3>
+                        <p class="reputation__desc">Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
                     </li>
-                        <li>
-                        <svg>
-                            <use href=""></use>
+                        <li class="reputation__item">
+                        <svg class="reputation__icon" width="16" height="16">
+                            <use href="./images/sprite.svg#icon-design"></use>
                         </svg>
-                        <h3>Best Teams</h3>
-                        <p>Cursus semper tellus volutpat aliquet lacus. </p>
+                        <h3 class="reputation__item-title">Best Teams</h3>
+                        <p class="reputation__desc">Cursus semper tellus volutpat aliquet lacus. </p>
                     </li>
-                        <li>
-                        <svg>
-                            <use href=""></use>
+                        <li class="reputation__item">
+                        <svg class="reputation__icon" width="16" height="16">
+                            <use href="./images/sprite.svg#icon-design"></use>
                         </svg>
-                        <h3>Best Designs</h3>
-                        <p>Ultricies at ipsum nunc, tristique nam lectus.</p>
+                        <h3 class="reputation__item-title">Best Designs</h3>
+                        <p class="reputation__desc">Ultricies at ipsum nunc, tristique nam lectus.</p>
                     </li>
                     </ul>
             </div>
         </section>
-        <section id="about">
-            <div>
-                <img src="" alt="">
-                <h2>About us</h2>
-                <p>For more than 30 years we have been delivering world-class construction and we've built many lasting relationships along the way. We've matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.</p>
-                <a href="tel:+84 1102 2703">More on Our History</a>
+        <section id="about" class="about-us">
+            <div class="container">
+                <picture class="about-us__img">
+                    <source 
+                    srcset="./images/about-us-desktop.webp 1x, ./images/about-us-desktop-x2.webp 2x"
+                    media="(min-width: 1054px)">
+                    <source
+                    srcset="./images/about-us-tablet.webp 1x, ./images/about-us-tablet-x2.webp 2x"
+                    media="(max-width: 1053px)">
+                    <img src="./images/about-us-tablet.webp" alt="old man in glasses">
+                </picture>
+                <div class="about-us__thumb">
+                <h2 class="about-us__title">About us</h2>
+                <p class="about-us__history">For more than 30 years we have been delivering world-class construction and we've built many lasting relationships along the way.</p>
+                <pre></pre>
+                <p class="about-us__history">We've matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.</p>
+                <a href="tel:+84 1102 2703" class="about-us__link">More on Our History</a>
+                </div>
             </div>
         </section>
-        <section id="service">
-            <div>
-                <h2>Services</h2>
-                <ul>
-                    <li>
-                        <svg>
-                            <use href=""></use>
+        <section id="service" class="service">
+            <div class="container">
+                <h2 class="service__title">Services</h2>
+                <ul class="service__list">
+                    <li class="service__item">
+                        <svg class="service__icon" width="16" height="16">
+                            <use href="./images/sprite.svg#icon-construction"></use>
                         </svg>
-                        <h3>Construction</h3>
+                        <h3 class="service__item-title">Construction</h3>
                     </li>
-                    <li>
-                        <svg>
-                            <use href=""></use>
+                    <li class="service__item">
+                        <svg class="service__icon" width="16" height="16">
+                            <use href="./images/sprite.svg#icon-renovation"></use>
                         </svg>
-                        <h3>Renovation</h3>
+                        <h3 class="service__item-title">Renovation</h3>
                     </li>
-                    <li>
-                        <svg>
-                            <use href=""></use>
+                    <li class="service__item">
+                        <svg class="service__icon" width="16" height="16">
+                            <use href="./images/sprite.svg#icon-consultation"></use>
                         </svg>
-                        <h3>Consultation</h3>
+                        <h3 class="service__item-title">Consultation</h3>
                     </li>
-                    <li>
-                        <svg>
-                            <use href=""></use>
+                    <li class="service__item">
+                        <svg class="service__icon" width="16" height="16">
+                            <use href="./images/sprite.svg#icon-repair"></use>
                         </svg>
-                        <h3>Repair Services</h3>
+                        <h3 class="service__item-title">Repair Services</h3>
                     </li>
-                    <li>
-                        <svg>
-                            <use href=""></use>
+                    <li class="service__item">
+                        <svg class="service__icon" width="16" height="16">
+                            <use href="./images/sprite.svg#icon-architecture"></use>
                         </svg>
-                        <h3>Architecture</h3>
+                        <h3 class="service__item-title">Architecture</h3>
                     </li>
-                    <li>
-                        <svg>
-                            <use href=""></use>
+                    <li class="service__item">
+                        <svg class="service__icon" width="16" height="16">
+                            <use href="./images/sprite.svg#icon-electric"></use>
                         </svg>
-                        <h3>Electric</h3>
+                        <h3 class="service__item-title">Electric</h3>
                     </li>
                 </ul>
             </div>
         </section>
-        <section>
-            <div>
-                <ul>
-                    <li>
-                        <svg>
-                            <use href=""></use>
-                        </svg>
-                        <p><span>84</span>Happy Clients</p>
+        <section class="preference">
+            <div class="container">
+                <ul class="preference__list">
+                    <li class="preference__item">
+                        <img src="./images/clients.jpg" alt="happy clients" class="preference__img">
+                        <p class="preference__desc"><span class="preference__desc--accent">84</span>Happy Clients</p>
                     </li>
-                    <li>
-                        <svg>
-                            <use href=""></use>
-                        </svg>
-                        <p><span>123</span>Projects Completed</p>
+                    <li class="preference__item">
+                        <img src="./images/projects.jpg" alt="sucessfull projects" class="preference__img">
+                        <p class="preference__desc"><span class="preference__desc--accent">123</span>Projects Completed</p>
                     </li>
-                    <li>
-                        <svg>
-                            <use href=""></use>
-                        </svg>
-                        <p><span>37</span>Awards Win</p>
+                    <li class="preference__item">
+                        <img src="./images/win.jpg" alt="awards win" class="preference__img">
+                        <p class="preference__desc"><span class="preference__desc--accent">37</span>Awards Win</p>
                     </li>
-                    <li>
-                        <svg>
-                            <use href=""></use>
-                        </svg>
-                        <p><span>30</span>Years in Business</p>
+                    <li class="preference__item">
+                        <img src="./images/years.jpg" alt="years in business" class="preference__img">
+                        <p class="preference__desc"><span class="preference__desc--accent">30</span>Years in Business</p>
                     </li>
                 </ul>
-                <h2>30 Years Experience</h2>
-                <p>Our company has been the leading provided construction services to clients throughout the USA since 1988.</p>
-                <a href="#contact">Contact Us</a>
+                <h2 class="preference__title">30 Years Experience</h2>
+                <p class="preference__argument">Our company has been the leading provided construction services to clients throughout the USA since 1988.</p>
+                <a href="#contact" class="preference__link">Contact Us</a>
             </div>
         </section>
-        <section>
-            <div>
-                <h2>Free consultation with exceptional quality</h2>
-                <p>Just one call away:</p>
-                <a href="tel:+84 1102 2703">+84 1102 2703</a>
-                <a href="tel:+84 1102 2703">Get your consultation</a>
+        <section class="support">
+            <div class="container">
+                <h2 class="support__title">Free consultation with exceptional quality</h2>
+                <p class="support__desc">Just one call away:</p>
+                <a href="tel:+84 1102 2703" class="support__link">+84 1102 2703</a>
+                <a href="tel:+84 1102 2703" class="support__link">Get your consultation</a>
             </div>
         </section>
-        <section id="projects">
-            <div>
-                <h2>Projects</h2>
-                <ul>
-                    <li>All
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="projects__title">Projects</h2>
+                <ul class="projects__list">
+                    <li class="projects__item">All
                         <!-- carousel -->
                     </li>
-                    <li>Commercial
+                    <li class="projects__item">Commercial
                         <!-- carousel -->
                     </li>
-                    <li>Residential
+                    <li class="projects__item">Residential
                         <!-- carousel -->
                     </li>
-                    <li>Other
+                    <li class="projects__item">Other
                         <!-- carousel -->
                     </li>
                 </ul>
             </div>
         </section>
-        <section id="contact">
-            <div>
-                <h2>What can us do for you?</h2>
-                <p>We are ready to work on a project of any complexity, whether it's commercial or residential.</p>
-                <form>
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <select name="request" aria-placeholder="Reason for Contacting">
-                        <option value="info">Detail info</option>
-                        <option value="about product">About product</option>
-                        <option value="order">Order</option>
+        <section id="contact" class="feedback">
+            <div class="container">
+                <h2 class="feedback__title">What can us do for you?</h2>
+                <p class="feedback__desc">We are ready to work on a project of any complexity, whether it's commercial or residential.</p>
+                <form class="feedback__form">
+                    <input type="text" name="name" placeholder="Your Name" required class="feedback__input">
+                    <input type="email" name="email" placeholder="Email" required class="feedback__input">
+                    <select name="request" aria-placeholder="Reason for Contacting" class="feedback__input">
+                        <option value="info" class="feedback__details">Detail info</option>
+                        <option value="about product" class="feedback__details">About product</option>
+                        <option value="order" class="feedback__details">Order</option>
                     </select>
-                    <svg>
-                        <use></use>
+                    <svg class="feedback__icon" width="8" height="8">
+                        <use href="./images/sprite.svg#icon-menu"></use>
                     </svg>
-                    <input type="tel" name="phone" placeholder="phone">
-                    <textarea name="message" cols="30" rows="10"></textarea>
-                    <p><span>*</span>indicates a required field</p>
-                    <button type="submit">Submit</button>
+                    <input type="tel" name="phone" placeholder="phone" class="feedback__input">
+                    <textarea name="message" cols="30" rows="10" class="feedback__message"></textarea>
+                    <p class="feedback__explain"><span class="feedback__explain--accent">*</span>indicates a required field</p>
+                    <button type="submit" class="feedback__button">Submit</button>
                 </form>
             </div>
         </section>
     </main>
-    <footer>
-        <address>
-            <ul>
-                <li>Address:
-                    <a href="">6391 Elgin St. Celina, Delaware 10299</a>
+    <footer class="footer">
+        <div class="container">
+            <address class="footer__adress">
+                <span class="footer__adress--text">Address:</span>
+                <a href="" class="footer__adress-link">6391 Elgin St. Celina, Delaware 10299</a>
+                <span class="footer__adress--text">Phone:</span>
+                <a href="tel:+84 1102 2703" class="footer__adress-link">+84 1102 2703</a>
+                <span class="footer__adress--text">Email:</span>
+                <a href="mailto:" class="footer__adress-link">hello@thebox.com</a>
+            </address>
+            <div class="logo">
+                <svg class="logo__icon" width="15" height="19">
+                    <use href="./images/sprite.svg#icon-logo"></use>
+                </svg>
+                <span class="logo__text">TheBox</span>
+            </div>
+            <form class="footer__form">
+                <label for="#subscribe__input" class="footer__label">Newsletter:</label>
+                <input type="text" id="subscribe__input" placeholder="Your email here" required class="footer__label-input">
+                <button type="submit" class="footer__button-subs">Subscribe</button>
+            </form>
+            <ul class="footer__list">Social:
+                <li class="footer__item">
+                    <a href="" class="footer__link">
+                        <svg class="footer__icon" width="16" height="16">
+                            <use href="./images/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
                 </li>
-                <li>Phone:
-                    <a href="tel:+84 1102 2703">+84 1102 2703</a>
+                <li class="footer__item">
+                    <a href="" class="footer__link">
+                        <svg class="footer__icon" width="15" height="15">
+                            <use href="./images/sprite.svg#icon-linkedIn"></use>
+                        </svg>
+                    </a>
                 </li>
-                <li>Email:
-                    <a href="mailto:">hello@thebox.com</a>
+                <li class="footer__item">
+                    <a href="" class="footer__link">
+                        <svg class="footer__icon" width="15" height="15">
+                            <use href="./images/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
                 </li>
             </ul>
-        </address>
-        <div>
-            <svg>
-                <use href=""></use>
-            </svg>
-            <span>TheBox</span>
+            <p class="footer__info">TheBox Company &#169; 2022. All Rights Reserved</p>
         </div>
-        <form>
-            <label for="#subscribe__input">Newsletter:</label>
-            <input type="text" id="subscribe__input" placeholder="Your email here" required>
-            <button type="submit">Subscribe</button>
-        </form>
-        <ul>Social:
-            <li>
-                <a href="">
-                    <svg>
-                        <use href=""></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <svg>
-                        <use href=""></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <svg>
-                        <use href=""></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-        <p>TheBox Company © 2022. All Rights Reserved</p>
     </footer>
-    <script src="./js/index.js"></script>
+    <!-- <script src="./js/index.js"></script> -->
 </body>
 </html>

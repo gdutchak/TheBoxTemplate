@@ -1,0 +1,22 @@
+.hero {
+    padding: 95px 0;
+    height: 250px;
+    background-image: linear-gradient(rgba(235, 236, 248, 0.534),
+    rgba(225, 227, 243, 0.486)), url(../images/hero-tablet.webp);
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/hero-tablet-x2.webp);
+  
+      }
+}
+
+.hero__title {
+    width: 224px;
+    font-weight: 600;
+    font-size: 29px;
+    color: #292E3D;
+}

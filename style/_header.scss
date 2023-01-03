@@ -1,0 +1,49 @@
+.header {
+    // display: flex;
+    // align-items: center;
+    height: 32px;
+}
+
+.header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo__icon {
+    margin-right: 5px;
+}
+
+.logo__text {
+font-weight: 700;
+font-size: 12px;
+font-style: italic;
+line-height: 1.7;
+color: var(--accent-color);
+}
+
+.main-nav {
+display: flex;
+justify-content: space-between;
+}
+
+.main-nav__link{
+    font-size: 7px;
+    line-height: 1.1;
+    padding: 12px 0;
+
+    &:hover, &:focus {
+        font-weight: 600;
+        color: #F9995D
+        ;
+    }
+
+    &:not(:last-of-type) {
+        margin-right: 21px;
+    }
+}
+

@@ -1,0 +1,46 @@
+.reputation {
+    padding: 24px 0 33px;
+}
+
+.reputation__title {
+margin-bottom: 20px;
+font-weight: 700;
+font-size: 15px;
+line-height: 1.1;
+text-align: center;
+color: #292E3D;
+}
+
+.reputation__list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 26px;
+    margin: 0 40px;
+}
+
+.reputation__item {
+    padding: 8px 8px 16px;
+    flex-basis: calc((100% - 2 * 26px) / 3);
+    border: 1px solid #E0E3EB;
+    border-radius: 2px;
+}
+
+.reputation__icon {
+margin-bottom: 7px;
+}
+
+.reputation__item-title {
+margin-bottom: 7px;
+
+font-weight: 700;
+font-size: 8px;
+line-height: 1.8;
+color: #3D445C;
+}
+
+.reputation__desc {
+font-size: 6px;
+line-height: 1.2;
+color: #858EAD;
+}

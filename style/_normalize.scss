@@ -1,0 +1,46 @@
+* {
+    display: block;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    color: var(--main-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+
+.container {
+    @media screen and (max-width: 1054px) {
+        max-width: 578px;
+      }
+    
+      padding: 0 45px;
+      margin-left: auto;
+      margin-right: auto;
+    
+      @media screen and (min-width: 1054px) {
+        width: 1054px;
+        padding: 0 82px;
+      }
+}
