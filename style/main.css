@@ -104,6 +104,7 @@ img {
   background-image: linear-gradient(rgba(235, 236, 248, 0.534), rgba(225, 227, 243, 0.486)), url(../images/hero-tablet.webp);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -133,7 +134,6 @@ img {
 
 .reputation__list {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 26px;
   margin: 0 40px;
@@ -215,5 +215,221 @@ img {
   transform: scale(1.4);
   background-color: rgba(210, 229, 230, 0.8666666667);
   border: 1px solid var(--white-color);
+  color: var(--white-color);
+}
+
+.service {
+  padding: 17px 0 30px;
+  background-color: #F6F8F7;
+}
+
+.service__title {
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.1;
+  color: #292E3D;
+  text-align: center;
+}
+
+.service__list {
+  margin: 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 20px;
+}
+
+.service__item {
+  flex-basis: calc((100% - 80px) / 3);
+  padding: 15px 23px;
+  background-color: var(--white-color);
+  box-shadow: 0px 0px 14.8513px -0.802774px rgba(17, 24, 39, 0.05);
+  border-radius: 1px;
+}
+.service__item:nth-of-type(even) {
+  background-color: var(--accent-color);
+}
+.service__item:nth-of-type(even) > .service__icon {
+  border-bottom: 1px solid var(--white-color);
+}
+.service__item:nth-of-type(even) > .service__item-title {
+  color: var(--white-color);
+}
+
+.service__icon {
+  margin: 0 auto 8px;
+  padding: 0 4px 8px;
+  border-bottom: 1px solid #E0E3EB;
+  box-sizing: content-box;
+}
+
+.service__item-title {
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.preference {
+  position: relative;
+  padding: 40px 0 22px;
+}
+
+.preference__item {
+  position: relative;
+  display: inline-block;
+  padding: 12px;
+  background-color: var(--white-color);
+  border-radius: 2px;
+  box-shadow: 0px 4.81664px 6.42219px -1.60555px rgba(17, 24, 39, 0.1), 0px 1.60555px 2.40832px -0.802774px rgba(17, 24, 39, 0.05);
+}
+.preference__item:first-of-type {
+  position: absolute;
+  top: 40px;
+  left: 230px;
+  z-index: 3;
+}
+.preference__item:nth-of-type(2) {
+  position: absolute;
+  top: 80px;
+  left: 125px;
+}
+.preference__item:nth-of-type(2) > .preference__img {
+  top: -15px;
+  left: -14%;
+}
+.preference__item:nth-of-type(3) {
+  position: absolute;
+  top: 140px;
+  left: 220px;
+  z-index: 3;
+}
+.preference__item:nth-of-type(3) > .preference__img {
+  top: -8px;
+}
+.preference__item:nth-of-type(4) {
+  position: absolute;
+  bottom: 40px;
+  left: 150px;
+}
+.preference__item:nth-of-type(4) > .preference__img {
+  top: 80%;
+  right: 15px;
+}
+
+.preference__img {
+  position: absolute;
+  width: 35px;
+  top: 0;
+  left: 75%;
+}
+
+.preference__desc {
+  display: flex;
+  font-size: 10px;
+  line-height: 1.1;
+  color: #667299;
+}
+.preference__desc::before {
+  margin-right: 5px;
+  display: inline-block;
+  content: "";
+  width: 3px;
+  height: 11px;
+  background-color: #F9995D;
+}
+
+.preference__info-number {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #292E3D;
+}
+
+.preference__thumb {
+  width: 144px;
+  margin: 26px 0 47px auto;
+}
+
+.preference__title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--accent-color);
+}
+
+.preference__argument {
+  margin-bottom: 22px;
+  font-size: 8px;
+  line-height: 1.2;
+  color: #525B7A;
+}
+
+.preference__link {
+  width: 70px;
+  padding: 6px 15px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 7px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.support {
+  padding: 40px 0;
+  background-image: url(../images/consultation-tablet.webp);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.support > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .support {
+    background-image: url(../images/consultation-tablet-x2.webp);
+  }
+}
+
+.support__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--white-color);
+}
+
+.support__desc {
+  display: inline-block;
+  font-size: 10px;
+  line-height: 1.1;
+  color: var(--white-color);
+}
+
+.support__link {
+  display: inline-block;
+  text-decoration: underline;
+  font-size: 10px;
+  line-height: 1.1;
+  color: var(--white-color);
+}
+
+.support__button {
+  width: 92px;
+  padding: 6px;
+  border: 2px solid var(--white-color);
+  border-radius: 2px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 7px;
+  line-height: 1.1;
+  text-align: center;
   color: var(--white-color);
 }/*# sourceMappingURL=main.css.map */

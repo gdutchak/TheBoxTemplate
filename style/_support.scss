@@ -1,0 +1,54 @@
+.support {
+padding: 40px 0;
+background-image: url(../images/consultation-tablet.webp); 
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+
+& > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    background-image: url(../images/consultation-tablet-x2.webp)
+}
+}
+
+.support__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    color: var(--white-color);
+}
+
+.support__desc {
+    display: inline-block;
+    font-size: 10px;
+    line-height: 1.1;
+    color: var(--white-color);
+}
+
+.support__link {
+display: inline-block;
+text-decoration: underline;
+font-size: 10px;
+line-height: 1.1;
+color: var(--white-color);
+}
+
+.support__button {
+width: 92px;
+padding: 6px;
+border: 2px solid var(--white-color);
+border-radius: 2px;
+background-color: transparent;
+font-weight: 600;
+font-size: 7px;
+line-height: 1.1;
+text-align: center;
+color: var(--white-color);
+}
