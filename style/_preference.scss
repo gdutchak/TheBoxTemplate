@@ -105,7 +105,7 @@ color: #292E3D;
 
 .preference__link {
 width: 70px;
-padding: 6px 15px;
+padding: 6px 12px;
 background-color: var(--accent-color);
 border-radius: 2px;
 font-weight: 600;
@@ -113,4 +113,12 @@ font-size: 7px;
 line-height: 1.2;
 text-align: center;
 color: var(--white-color);
+cursor: pointer;
+
+&:hover, &:focus {
+    transform: scale(1.1);
+    background-color: #929cc4;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
 }

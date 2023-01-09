@@ -31,16 +31,19 @@ img {
   }
 
 .container {
-    @media screen and (max-width: 1054px) {
-        max-width: 578px;
-      }
-    
-      padding: 0 45px;
+      padding: 0 25px;
       margin-left: auto;
       margin-right: auto;
-    
-      @media screen and (min-width: 1054px) {
-        width: 1054px;
-        padding: 0 82px;
+    @media screen and (max-width: 578px) {
+      max-width: 480px;
+    }
+    @media screen and (min-width: 578px), (max-width: 1054px) {
+        width: 578px;
+        padding: 0 45px;
       }
+    
+    @media screen and (min-width: 1054px) {
+      width: 1054px;
+      padding: 0 82px;
+    }
 }

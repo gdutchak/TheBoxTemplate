@@ -1,0 +1,122 @@
+.footer {
+padding: 34px 0 10px;
+background-image: linear-gradient(to bottom, var(--white-color) 85%, var(--accent-color) 85%);
+
+& .logo {
+    margin-bottom: 40px;
+}
+
+& .container {
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+.footer__adress {
+margin-bottom: 12px;
+}
+
+.footer__adress-link {
+    font-size: 8px;
+    line-height: 1.1;
+    font-style: normal;
+    color: #292E3D;
+
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+} 
+
+.footer__adress--accent {
+    width: 45px;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+
+.footer__form {
+    margin-bottom: 17px;
+    width: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__desc {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: var(--accent-color);
+
+    &:first-child {
+        width: 170px;
+    }
+}
+
+.footer__label-input {
+    padding: 2px;
+    background: var(--white-color);
+    border: 1px solid #E0E3EB;
+    border-radius: 2px;
+    font-size: 9px;
+    line-height: 1.1;
+    outline: none;
+
+    &::placeholder {
+        font-size: 9px;
+        line-height: 1.1;
+        color: #A3AAC2;
+    }
+}
+
+.footer__button-subs {
+    padding: 4px 9px;
+    width: 54px;
+    background-color: #F9995D;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 7px;
+    line-height: 1.1;
+    text-align: center;
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        background-color: #eff1f5;
+        border: 1px solid #F9995D;
+        color: #F9995D;
+    }
+}
+
+.footer__list {
+width: 64px;
+display: flex;
+justify-content: space-between;
+}
+
+.footer__item {
+
+}
+
+.footer__link {
+
+}
+
+.footer__icon {
+    transition: scale 500ms ease-in;
+
+.footer__link:hover > &, 
+.footer__link:focus > & {
+    transform: scale(1.1);
+}
+}
+
+.footer__info {
+font-size: 6px;
+line-height: 1.2;
+color: var(--white-color);
+}

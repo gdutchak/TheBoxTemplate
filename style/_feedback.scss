@@ -1,0 +1,133 @@
+.feedback {
+padding: 24px 0;
+background-color: #F6F8F7;
+}
+
+.feedback__title {
+    margin-bottom: 7px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #292E3D;
+    text-align: center;
+}
+
+.feedback__desc {
+    margin-bottom: 15px;
+    font-size: 8px;
+    line-height: 1.1;
+    text-align: center;
+    color: #292E3D;
+}
+
+.feedback__form {
+margin: 0 auto;
+width: 250px;
+padding: 0 6px;
+}
+
+.feedback__input {
+margin-bottom: 8px;
+display: inline-block;
+width: 112px;
+height: 16px;
+padding: 3px;
+background-color: var(--white-color);
+border: 1px solid #E0E3EB;
+border-radius: 2px;
+font-size: 7px;
+line-height: 1.1;
+color: #A3AAC2;
+appearance: none;
+outline: none;
+
+&::placeholder {
+    font-size: 7px;
+    line-height: 1.1;
+    color: #A3AAC2;
+};
+
+&::after {
+content: "*";
+display: block;
+background-color: #C40303;
+width: 4px;
+height: 4px;
+}
+}
+
+
+.feedback__details {
+font-size: 7px;
+line-height: 1.1;
+color: #A3AAC2;
+}
+
+.feedback__wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.feedback__icon {
+position: absolute;
+top: 6px;
+right: 4px;
+background-color: var(--white-color);
+pointer-events: none;
+}
+
+.feedback__message {
+margin-bottom: 3px;
+padding: 3px;
+width: 229px;
+height: 54px;
+resize: none;
+background-color: var(--white-color);
+border: 1px solid #E0E3EB;
+border-radius: 2px;
+font-size: 7px;
+line-height: 1.1;
+color: #292E3D;
+
+&::placeholder {
+    font-size: 7px;
+    line-height: 1.1;
+    color: #A3AAC2;
+}
+}
+
+.feedback__explain {
+    margin-bottom: 10px;
+    font-size: 7px;
+    line-height: 1.1;
+    color: #929cc4;
+}
+
+.feedback__explain--accent {
+margin-right: 3px;
+display: inline-block;
+color: #C40303;
+}
+
+.feedback__button {
+margin: 0 auto;
+width: 108px;
+padding: 5px 12px;
+background-color: var(--accent-color);
+font-weight: 500;
+font-size: 10px;
+line-height: 1.2;
+text-align: center;
+color: var(--white-color);
+border: none;
+border-radius: 2px;
+cursor: pointer;
+transition: scale 500ms ease-in;
+
+&:hover, &:focus {
+    transform: scale(1.1);
+    background-color: #929cc4;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+}
