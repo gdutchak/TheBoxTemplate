@@ -1,6 +1,13 @@
 .preference {
-position: relative;
-padding: 40px 0 22px;
+padding: 20px 0 22px;
+
+@media screen and (min-width: 577px) and (max-width: 1053px){
+    padding: 40px 0 22px;
+}
+
+& > .container {
+    position: relative;
+}
 }
 
 
@@ -14,26 +21,26 @@ box-shadow: 0px 4.81664px 6.42219px -1.60555px rgba(17, 24, 39, 0.1), 0px 1.6055
 
 &:first-of-type{
     position: absolute;
-    top: 40px;
-    left: 230px;
+    top: -30px;
+    left: 190px;
     z-index: 3;
 }
 
 &:nth-of-type(2) {
     position: absolute;
-    top: 80px;
-    left: 125px;
+    top: 15px;
+    left: 75px;
 }
 
 &:nth-of-type(2) > .preference__img {
     top: -15px;
-    left: -14%;
+    left: -24px;
 }
 
 &:nth-of-type(3) {
     position: absolute;
-    top: 140px;
-    left: 220px;
+    top: 70px;
+    left: 170px;
     z-index: 3;
 }
 
@@ -43,13 +50,39 @@ box-shadow: 0px 4.81664px 6.42219px -1.60555px rgba(17, 24, 39, 0.1), 0px 1.6055
 
 &:nth-of-type(4) {
     position: absolute;
-    bottom: 40px;
-    left: 150px;
+    bottom: -25px;
+    left: 70px;
 }
 
 &:nth-of-type(4) > .preference__img {
     top: 80%;
     right: 15px;
+}
+
+@media screen and (min-width: 577px) and (max-width: 1053px){
+    &:first-of-type{
+        top: -40px;
+        left: 240px;    
+    }
+
+    &:nth-of-type(2) {
+        position: absolute;
+        top: 10px;
+        left: 125px;
+    }
+
+    &:nth-of-type(3) {
+        position: absolute;
+        top: 70px;
+        left: 220px;
+        z-index: 3;
+    }
+
+    &:nth-of-type(4) {
+        position: absolute;
+        bottom: -30px;
+        left: 150px;
+    }
 }
 }
 
@@ -78,22 +111,36 @@ left: 75%;
 
 .preference__info-number {
 font-weight: 600;
-font-size: 28px;
+font-size: 20px;
 line-height: 1.2;
 color: #292E3D;
+
+@media screen and (min-width: 577px) and (max-width: 1053px){
+    font-size: 28px;
+}
 }
 
 .preference__thumb {
-    width: 144px;
+    width: 100px;
     margin: 26px 0 47px auto;
+
+    @media screen and (min-width: 577px) and (max-width: 1053px){
+        width: 144px;
+    }
 }
 
 .preference__title {
-    margin-bottom: 16px;
-    font-weight: 700;
-    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
     line-height: 1.2;
     color: var(--accent-color);
+
+    @media screen and (min-width: 577px) and (max-width: 1053px){
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 24px;
+    }
 }
 
 .preference__argument {

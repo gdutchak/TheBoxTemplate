@@ -1,8 +1,8 @@
 .support {
-padding: 40px 0;
+padding: 20px 0;
 background-image: url(../images/consultation-tablet.webp); 
 background-position: center;
-background-size: contain;
+background-size: cover;
 background-repeat: no-repeat;
 
 & > .container {
@@ -16,6 +16,10 @@ background-repeat: no-repeat;
 (min-resolution: 2dppx) {
     background-image: url(../images/consultation-tablet-x2.webp)
 }
+
+@media screen and (min-width: 577px) and (max-width: 1053px){
+    padding: 40px 0;
+}
 }
 
 .support__title {
@@ -23,6 +27,11 @@ background-repeat: no-repeat;
     font-size: 14px;
     line-height: 1.1;
     color: var(--white-color);
+
+    @media screen and (min-width: 577px) and (max-width: 1053px){
+        font-weight: 500;
+        font-size: 12px;
+    }
 }
 
 .support__desc {
@@ -41,7 +50,7 @@ color: var(--white-color);
 }
 
 .support__button {
-width: 92px;
+width: 120px;
 padding: 6px;
 border: 2px solid var(--white-color);
 border-radius: 2px;
@@ -52,4 +61,8 @@ line-height: 1.1;
 text-align: center;
 color: var(--white-color);
 cursor: pointer;
+
+@media screen and (min-width: 577px) and (max-width: 1053px){
+    width: 92px;
+}
 }

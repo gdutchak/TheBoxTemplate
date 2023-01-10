@@ -1,6 +1,6 @@
 .hero {
-    padding: 95px 0;
-    height: 250px;
+    padding: 50px 0;
+    height: 200px;
     background-image: linear-gradient(rgba(235, 236, 248, 0.534),
     rgba(225, 227, 243, 0.486)), url(../images/hero-tablet.webp);
     background-size: cover;
@@ -13,11 +13,20 @@
       background-image: url(../images/hero-tablet-x2.webp);
   
       }
+
+    @media screen and (min-width: 577px) and (max-width: 1053px){
+        height: 250px;
+        padding: 95px 0;
+    }
 }
 
 .hero__title {
     width: 224px;
     font-weight: 600;
-    font-size: 29px;
+    font-size: 22px;
     color: #292E3D;
+
+    @media screen and (min-width: 577px) and (max-width: 1053px){
+        font-size: 29px;
+    }
 }

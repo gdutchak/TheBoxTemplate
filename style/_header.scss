@@ -1,6 +1,4 @@
 .header {
-    // display: flex;
-    // align-items: center;
     height: 32px;
 }
 
@@ -38,12 +36,17 @@ justify-content: space-between;
 
     &:hover, &:focus {
         font-weight: 600;
-        color: #F9995D
-        ;
+        color: #F9995D;
     }
 
     &:not(:last-of-type) {
-        margin-right: 21px;
+        margin-right: 11px;
+    }
+
+    @media screen and (min-width: 577px) and (max-width: 1053px){
+        &:not(:last-of-type) {
+            margin-right: 21px;
+        }
     }
 }
 
