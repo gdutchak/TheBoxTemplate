@@ -2,33 +2,39 @@
 padding: 30px 0 40px;
 
 & > .container {
+    display: flex;
+    align-items: center;
     position: relative;
 }
 
 @media screen and (min-width: 577px) and (max-width: 1053px){
     padding: 30px 0 80px;
+    display: block;
 }
 }
 
 .about-us__img {
 max-width: 300px;
+margin-right: -50px;
+display: inline-block;
 
 @media screen and (min-width: 577px) and (max-width: 1053px){
     max-width: 362px;
+    margin-right: 0;
 }
 }
 
 .about-us__thumb {
-position: absolute;
-right: 60px;
-top: 15px;
+display: inline-block;
 width: 150px;
-padding: 10px 24px 10px 16px;
+padding: 10px 12px 10px 8px;
 background-color: var(--accent-color);
 
 @media screen and (min-width: 577px) and (max-width: 1053px){
+    position: absolute;
     width: 196px;
     right: 45px;
+    bottom: 26px;
     padding: 20px 24px 24px 16px;
 }
 }

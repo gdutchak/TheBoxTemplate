@@ -211,35 +211,41 @@ img {
   padding: 30px 0 40px;
 }
 .about-us > .container {
+  display: flex;
+  align-items: center;
   position: relative;
 }
 @media screen and (min-width: 577px) and (max-width: 1053px) {
   .about-us {
     padding: 30px 0 80px;
+    display: block;
   }
 }
 
 .about-us__img {
   max-width: 300px;
+  margin-right: -50px;
+  display: inline-block;
 }
 @media screen and (min-width: 577px) and (max-width: 1053px) {
   .about-us__img {
     max-width: 362px;
+    margin-right: 0;
   }
 }
 
 .about-us__thumb {
-  position: absolute;
-  right: 60px;
-  top: 15px;
+  display: inline-block;
   width: 150px;
-  padding: 10px 24px 10px 16px;
+  padding: 10px 12px 10px 8px;
   background-color: var(--accent-color);
 }
 @media screen and (min-width: 577px) and (max-width: 1053px) {
   .about-us__thumb {
+    position: absolute;
     width: 196px;
     right: 45px;
+    bottom: 26px;
     padding: 20px 24px 24px 16px;
   }
 }
@@ -319,8 +325,8 @@ img {
   margin: 0 40px;
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
   row-gap: 20px;
 }
 @media screen and (min-width: 577px) and (max-width: 1053px) {
@@ -390,13 +396,13 @@ img {
 .preference__item:first-of-type {
   position: absolute;
   top: -30px;
-  left: 190px;
+  left: 110px;
   z-index: 3;
 }
 .preference__item:nth-of-type(2) {
   position: absolute;
   top: 15px;
-  left: 75px;
+  left: 25px;
 }
 .preference__item:nth-of-type(2) > .preference__img {
   top: -15px;
@@ -405,7 +411,7 @@ img {
 .preference__item:nth-of-type(3) {
   position: absolute;
   top: 70px;
-  left: 170px;
+  left: 95px;
   z-index: 3;
 }
 .preference__item:nth-of-type(3) > .preference__img {
@@ -414,7 +420,7 @@ img {
 .preference__item:nth-of-type(4) {
   position: absolute;
   bottom: -25px;
-  left: 70px;
+  left: 20px;
 }
 .preference__item:nth-of-type(4) > .preference__img {
   top: 80%;
