@@ -827,10 +827,10 @@ img {
 
 .footer__form {
   margin-bottom: 17px;
-  width: 170px;
 }
 @media screen and (min-width: 577px) and (max-width: 1053px) {
   .footer__form {
+    width: 170px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -845,11 +845,14 @@ img {
   text-transform: uppercase;
   color: var(--accent-color);
 }
-.footer__desc:first-child {
-  width: 170px;
+@media screen and (min-width: 577px) and (max-width: 1053px) {
+  .footer__desc:first-child {
+    width: 170px;
+  }
 }
 
 .footer__label-input {
+  width: 90px;
   margin-bottom: 8px;
   padding: 2px;
   background: var(--white-color);
@@ -876,6 +879,7 @@ img {
 }
 @media screen and (min-width: 577px) and (max-width: 1053px) {
   .footer__label-input {
+    width: 110px;
     margin-bottom: 0;
   }
 }
