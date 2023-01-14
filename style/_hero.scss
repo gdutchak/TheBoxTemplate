@@ -11,12 +11,27 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: url(../images/hero-tablet-x2.webp);
-  
       }
 
     @media screen and (min-width: 577px) and (max-width: 1053px){
         height: 250px;
         padding: 95px 0;
+    }
+
+    @media screen and (min-width: 1053px){
+        display: flex;
+        align-items: center;
+        height: 472px;
+        padding: 0;
+        background-image: linear-gradient(rgba(235, 236, 248, 0.534),
+    rgba(225, 227, 243, 0.486)), url(../images/hero-desktop.webp);
+        background-position: bottom;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/hero-desktop-x2.webp);
+      }
     }
 }
 
@@ -25,8 +40,14 @@
     font-weight: 600;
     font-size: 22px;
     color: #292E3D;
+    line-height: 1.2;
 
     @media screen and (min-width: 577px) and (max-width: 1053px){
         font-size: 29px;
+    }
+
+    @media screen and (min-width: 1053px){
+        width: 406px;
+        font-size: 52px;
     }
 }

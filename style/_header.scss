@@ -1,5 +1,9 @@
 .header {
     height: 32px;
+
+    @media screen and (min-width: 1053px){
+        height: 58px;
+    }
 }
 
 .header > .container {
@@ -10,10 +14,16 @@
 
 .logo {
     display: flex;
+    align-items: center;
 }
 
 .logo__icon {
     margin-right: 5px;
+
+    @media screen and (min-width: 1053px){
+        width: 27px;
+        height: 34px;
+    }
 }
 
 .logo__text {
@@ -22,6 +32,11 @@ font-size: 12px;
 font-style: italic;
 line-height: 1.7;
 color: var(--accent-color);
+
+@media screen and (min-width: 1053px){
+    font-size: 22px;
+    line-height: 1.2;
+}
 }
 
 .main-nav {
@@ -46,6 +61,15 @@ justify-content: space-between;
     @media screen and (min-width: 577px) and (max-width: 1053px){
         &:not(:last-of-type) {
             margin-right: 21px;
+        }
+    }
+
+    @media screen and (min-width: 1053px){
+        font-size: 14px;
+        padding: 21px 0;
+        
+        &:not(:last-of-type) {
+            margin-right: 36px;
         }
     }
 }

@@ -49,7 +49,7 @@ img {
 @media screen and (min-width: 1053px) {
   .container {
     width: 1054px;
-    padding: 0 70px;
+    padding: 0 80px;
   }
 }
 
@@ -63,6 +63,11 @@ img {
 .header {
   height: 32px;
 }
+@media screen and (min-width: 1053px) {
+  .header {
+    height: 58px;
+  }
+}
 
 .header > .container {
   display: flex;
@@ -72,10 +77,17 @@ img {
 
 .logo {
   display: flex;
+  align-items: center;
 }
 
 .logo__icon {
   margin-right: 5px;
+}
+@media screen and (min-width: 1053px) {
+  .logo__icon {
+    width: 27px;
+    height: 34px;
+  }
 }
 
 .logo__text {
@@ -84,6 +96,12 @@ img {
   font-style: italic;
   line-height: 1.7;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1053px) {
+  .logo__text {
+    font-size: 22px;
+    line-height: 1.2;
+  }
 }
 
 .main-nav {
@@ -108,6 +126,15 @@ img {
     margin-right: 21px;
   }
 }
+@media screen and (min-width: 1053px) {
+  .main-nav__link {
+    font-size: 14px;
+    padding: 21px 0;
+  }
+  .main-nav__link:not(:last-of-type) {
+    margin-right: 36px;
+  }
+}
 
 .hero {
   padding: 50px 0;
@@ -128,16 +155,38 @@ img {
     padding: 95px 0;
   }
 }
+@media screen and (min-width: 1053px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    height: 472px;
+    padding: 0;
+    background-image: linear-gradient(rgba(235, 236, 248, 0.534), rgba(225, 227, 243, 0.486)), url(../images/hero-desktop.webp);
+    background-position: bottom;
+  }
+}
+@media screen and (min-width: 1053px) and (min-device-pixel-ratio: 2), screen and (min-width: 1053px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1053px) and (min-resolution: 192dpi), screen and (min-width: 1053px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero-desktop-x2.webp);
+  }
+}
 
 .hero__title {
   width: 224px;
   font-weight: 600;
   font-size: 22px;
   color: #292E3D;
+  line-height: 1.2;
 }
 @media screen and (min-width: 577px) and (max-width: 1053px) {
   .hero__title {
     font-size: 29px;
+  }
+}
+@media screen and (min-width: 1053px) {
+  .hero__title {
+    width: 406px;
+    font-size: 52px;
   }
 }
 
@@ -149,6 +198,11 @@ img {
     padding: 24px 0 33px;
   }
 }
+@media screen and (min-width: 1053px) {
+  .reputation {
+    padding: 43px 0 60px;
+  }
+}
 
 .reputation__title {
   margin-bottom: 20px;
@@ -157,6 +211,13 @@ img {
   line-height: 1.1;
   text-align: center;
   color: #292E3D;
+}
+@media screen and (min-width: 1053px) {
+  .reputation__title {
+    margin-bottom: 36px;
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 
 .reputation__list {
@@ -168,6 +229,12 @@ img {
 @media screen and (min-width: 577px) and (max-width: 1053px) {
   .reputation__list {
     margin: 0 40px;
+  }
+}
+@media screen and (min-width: 1053px) {
+  .reputation__list {
+    gap: 48px;
+    margin: 0 80px;
   }
 }
 
@@ -182,9 +249,22 @@ img {
     padding: 8px 8px 16px;
   }
 }
+@media screen and (min-width: 1053px) {
+  .reputation__item {
+    flex-basis: calc((100% - 96px) / 3);
+    padding: 15px 14px 30px;
+  }
+}
 
 .reputation__icon {
   margin-bottom: 7px;
+}
+@media screen and (min-width: 1053px) {
+  .reputation__icon {
+    margin-bottom: 13px;
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .reputation__item-title {
@@ -200,11 +280,22 @@ img {
     margin-bottom: 7px;
   }
 }
+@media screen and (min-width: 1053px) {
+  .reputation__item-title {
+    margin-bottom: 13px;
+    font-size: 15px;
+  }
+}
 
 .reputation__desc {
   font-size: 6px;
   line-height: 1.2;
   color: #858EAD;
+}
+@media screen and (min-width: 1053px) {
+  .reputation__desc {
+    font-size: 12px;
+  }
 }
 
 .about-us {
@@ -221,6 +312,15 @@ img {
     display: block;
   }
 }
+@media screen and (min-width: 1054px) {
+  .about-us {
+    padding: 54px 0 90px;
+  }
+  .about-us > .container {
+    display: block;
+    position: relative;
+  }
+}
 
 .about-us__img {
   max-width: 300px;
@@ -230,6 +330,12 @@ img {
 @media screen and (min-width: 577px) and (max-width: 1053px) {
   .about-us__img {
     max-width: 362px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1054px) {
+  .about-us__img {
+    max-width: 660px;
     margin-right: 0;
   }
 }
@@ -249,6 +355,15 @@ img {
     padding: 20px 24px 24px 16px;
   }
 }
+@media screen and (min-width: 1054px) {
+  .about-us__thumb {
+    width: 358px;
+    padding: 36px 43px 44px 30px;
+    position: absolute;
+    top: 34px;
+    right: 110px;
+  }
+}
 
 .about-us__title {
   margin-bottom: 10px;
@@ -262,6 +377,12 @@ img {
     margin-bottom: 15px;
     font-weight: 700;
     font-size: 15px;
+  }
+}
+@media screen and (min-width: 1054px) {
+  .about-us__title {
+    margin-bottom: 26px;
+    font-size: 26px;
   }
 }
 
@@ -279,6 +400,14 @@ img {
   }
   .about-us__history:last-of-type {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1054px) {
+  .about-us__history {
+    font-size: 15px;
+  }
+  .about-us__history:last-of-type {
+    margin-bottom: 52px;
   }
 }
 
@@ -306,10 +435,22 @@ img {
     padding: 4px 6px;
   }
 }
+@media screen and (min-width: 1054px) {
+  .about-us__link {
+    width: 160px;
+    padding: 12px 15px;
+    font-size: 13px;
+  }
+}
 
 .service {
   padding: 17px 0 30px;
   background-color: #F6F8F7;
+}
+@media screen and (min-width: 1054px) {
+  .service {
+    padding: 32px 0 55px;
+  }
 }
 
 .service__title {
@@ -319,6 +460,12 @@ img {
   line-height: 1.1;
   color: #292E3D;
   text-align: center;
+}
+@media screen and (min-width: 1054px) {
+  .service__title {
+    margin-bottom: 26px;
+    font-size: 26px;
+  }
 }
 
 .service__list {
@@ -335,9 +482,16 @@ img {
          column-gap: 40px;
   }
 }
+@media screen and (min-width: 1054px) {
+  .service__list {
+    -moz-column-gap: 70px;
+         column-gap: 70px;
+    row-gap: 35px;
+  }
+}
 
 .service__item {
-  flex-basis: calc((100% - 30px) / 2);
+  flex-basis: calc((100% - 25px) / 2);
   padding: 15px 23px;
   background-color: var(--white-color);
   box-shadow: 0px 0px 14.8513px -0.802774px rgba(17, 24, 39, 0.05);
@@ -357,12 +511,25 @@ img {
     flex-basis: calc((100% - 80px) / 3);
   }
 }
+@media screen and (min-width: 1054px) {
+  .service__item {
+    padding: 27px 52px;
+    flex-basis: calc((100% - 140px) / 3);
+  }
+}
 
 .service__icon {
   margin: 0 auto 8px;
   padding: 0 4px 8px;
   border-bottom: 1px solid #E0E3EB;
   box-sizing: content-box;
+}
+@media screen and (min-width: 1054px) {
+  .service__icon {
+    width: 29px;
+    height: 29px;
+    padding: 0 7px 14px;
+  }
 }
 
 .service__item-title {
@@ -372,6 +539,11 @@ img {
   text-align: center;
   color: var(--accent-color);
 }
+@media screen and (min-width: 1054px) {
+  .service__item-title {
+    font-size: 15px;
+  }
+}
 
 .preference {
   padding: 20px 0 22px;
@@ -379,6 +551,11 @@ img {
 @media screen and (min-width: 577px) and (max-width: 1053px) {
   .preference {
     padding: 40px 0 22px;
+  }
+}
+@media screen and (min-width: 1054px) {
+  .preference {
+    padding: 90px 0 70px;
   }
 }
 .preference > .container {
@@ -406,7 +583,7 @@ img {
 }
 .preference__item:nth-of-type(2) > .preference__img {
   top: -15px;
-  left: -24px;
+  left: -17px;
 }
 .preference__item:nth-of-type(3) {
   position: absolute;
@@ -423,29 +600,62 @@ img {
   left: 20px;
 }
 .preference__item:nth-of-type(4) > .preference__img {
-  top: 80%;
-  right: 15px;
+  top: 72%;
+  left: 90%;
 }
 @media screen and (min-width: 577px) and (max-width: 1053px) {
   .preference__item:first-of-type {
+    width: 112px;
     top: -40px;
-    left: 240px;
+    left: 35%;
   }
   .preference__item:nth-of-type(2) {
-    position: absolute;
-    top: 10px;
-    left: 125px;
+    width: 144px;
+    top: 5px;
+    left: 80px;
   }
   .preference__item:nth-of-type(3) {
-    position: absolute;
-    top: 70px;
-    left: 220px;
+    width: 110px;
+    left: 180px;
     z-index: 3;
   }
   .preference__item:nth-of-type(4) {
-    position: absolute;
-    bottom: -30px;
-    left: 150px;
+    width: 133px;
+    bottom: -36px;
+    left: 18%;
+  }
+}
+@media screen and (min-width: 1054px) {
+  .preference__item {
+    padding: 22px;
+  }
+  .preference__item:first-of-type {
+    width: 205px;
+    top: -35px;
+    left: 35%;
+  }
+  .preference__item:nth-of-type(2) {
+    width: 265px;
+    left: 14%;
+    top: 40px;
+  }
+  .preference__item:nth-of-type(2) > .preference__img {
+    top: -40px;
+    left: -30px;
+  }
+  .preference__item:nth-of-type(3) {
+    width: 202px;
+    top: 150px;
+    left: 30%;
+  }
+  .preference__item:nth-of-type(4) {
+    width: 244px;
+    bottom: -59px;
+    left: 14%;
+  }
+  .preference__item:nth-of-type(4) > .preference__img {
+    top: 70%;
+    left: 85%;
   }
 }
 
@@ -454,6 +664,12 @@ img {
   width: 35px;
   top: 0;
   left: 75%;
+}
+@media screen and (min-width: 1054px) {
+  .preference__img {
+    width: 70px;
+    top: -10px;
+  }
 }
 
 .preference__desc {
@@ -470,6 +686,14 @@ img {
   height: 11px;
   background-color: #F9995D;
 }
+@media screen and (min-width: 1054px) {
+  .preference__desc {
+    font-size: 18px;
+  }
+  .preference__desc::before {
+    height: 18px;
+  }
+}
 
 .preference__info-number {
   font-weight: 600;
@@ -482,6 +706,11 @@ img {
     font-size: 28px;
   }
 }
+@media screen and (min-width: 1054px) {
+  .preference__info-number {
+    font-size: 53px;
+  }
+}
 
 .preference__thumb {
   width: 100px;
@@ -490,6 +719,12 @@ img {
 @media screen and (min-width: 577px) and (max-width: 1053px) {
   .preference__thumb {
     width: 144px;
+  }
+}
+@media screen and (min-width: 1054px) {
+  .preference__thumb {
+    width: 262px;
+    margin: 35px 20px 60px auto;
   }
 }
 
@@ -507,12 +742,24 @@ img {
     font-size: 24px;
   }
 }
+@media screen and (min-width: 1054px) {
+  .preference__title {
+    margin-bottom: 30px;
+    font-size: 43px;
+  }
+}
 
 .preference__argument {
   margin-bottom: 22px;
   font-size: 8px;
   line-height: 1.2;
   color: #525B7A;
+}
+@media screen and (min-width: 1054px) {
+  .preference__argument {
+    margin-bottom: 45px;
+    font-size: 15px;
+  }
 }
 
 .preference__link {
@@ -532,6 +779,13 @@ img {
   background-color: #929cc4;
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
+}
+@media screen and (min-width: 1054px) {
+  .preference__link {
+    width: 128px;
+    padding: 12px 28px;
+    font-size: 13px;
+  }
 }
 
 .support {

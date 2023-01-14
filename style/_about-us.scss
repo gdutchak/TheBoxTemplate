@@ -11,6 +11,15 @@ padding: 30px 0 40px;
     padding: 30px 0 80px;
     display: block;
 }
+
+@media screen and (min-width: 1054px) {
+    padding: 54px 0 90px;
+
+    & > .container {
+        display: block;
+        position: relative;
+    }
+}
 }
 
 .about-us__img {
@@ -20,6 +29,11 @@ display: inline-block;
 
 @media screen and (min-width: 577px) and (max-width: 1053px){
     max-width: 362px;
+    margin-right: 0;
+}
+
+@media screen and (min-width: 1054px) {
+    max-width: 660px;
     margin-right: 0;
 }
 }
@@ -37,6 +51,14 @@ background-color: var(--accent-color);
     bottom: 26px;
     padding: 20px 24px 24px 16px;
 }
+
+@media screen and (min-width: 1054px) {
+    width: 358px;
+    padding: 36px 43px 44px 30px;
+    position: absolute;
+    top: 34px;
+    right: 110px;
+}
 }
 
 .about-us__title {
@@ -51,6 +73,11 @@ color: var(--white-color);
     margin-bottom: 15px;
     font-weight: 700;
     font-size: 15px;
+}
+
+@media screen and (min-width: 1054px) {
+    margin-bottom: 26px;
+    font-size: 26px;
 }
 }
 
@@ -68,6 +95,14 @@ color: var(--white-color);
 
     &:last-of-type{
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1054px) {
+    font-size: 15px;
+
+    &:last-of-type{
+        margin-bottom: 52px;
     }
 }
 }
@@ -94,5 +129,11 @@ transition: scale 500ms ease-in;
 @media screen and (min-width: 577px) and (max-width: 1053px){
     width: 75px;
     padding: 4px 6px;
+}
+
+@media screen and (min-width: 1054px) {
+    width: 160px;
+    padding: 12px 15px;
+    font-size: 13px;
 }
 }

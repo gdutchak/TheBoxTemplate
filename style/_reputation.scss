@@ -4,6 +4,10 @@
     @media screen and (min-width: 577px) and (max-width: 1053px){
         padding: 24px 0 33px;
     }
+
+    @media screen and (min-width: 1053px) {
+        padding: 43px 0 60px;
+    }
 }
 
 .reputation__title {
@@ -13,6 +17,12 @@ font-size: 15px;
 line-height: 1.1;
 text-align: center;
 color: #292E3D;
+
+@media screen and (min-width: 1053px) {
+    margin-bottom: 36px;
+    font-size: 26px;
+    line-height: 1.2;
+}
 }
 
 .reputation__list {
@@ -23,6 +33,11 @@ color: #292E3D;
 
     @media screen and (min-width: 577px) and (max-width: 1053px){
         margin: 0 40px;
+    }
+
+    @media screen and (min-width: 1053px) {
+        gap: 48px;
+        margin: 0 80px;
     }
 }
 
@@ -35,10 +50,21 @@ color: #292E3D;
     @media screen and (min-width: 577px) and (max-width: 1053px){
         padding: 8px 8px 16px;
     }
+
+    @media screen and (min-width: 1053px) {
+        flex-basis: calc((100% - 2 * 48px) / 3);
+        padding: 15px 14px 30px;
+    }
 }
 
 .reputation__icon {
 margin-bottom: 7px;
+
+@media screen and (min-width: 1053px) {
+    margin-bottom: 13px;
+    width: 26px;
+    height: 26px;
+}
 }
 
 .reputation__item-title {
@@ -53,10 +79,19 @@ color: #3D445C;
     line-height: 1.4;
     margin-bottom: 7px;
 }
+
+@media screen and (min-width: 1053px) {
+    margin-bottom: 13px;
+    font-size: 15px;
+}
 }
 
 .reputation__desc {
 font-size: 6px;
 line-height: 1.2;
 color: #858EAD;
+
+@media screen and (min-width: 1053px) {
+    font-size: 12px;
+}
 }
