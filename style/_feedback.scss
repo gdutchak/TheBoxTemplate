@@ -1,6 +1,10 @@
 .feedback {
 padding: 24px 0;
 background-color: #F6F8F7;
+
+@media screen and (min-width: 1054px) {
+    padding: 45px 0;
+}
 }
 
 .feedback__title {
@@ -10,6 +14,11 @@ background-color: #F6F8F7;
     line-height: 1.2;
     color: #292E3D;
     text-align: center;
+
+    @media screen and (min-width: 1054px) {
+        margin-bottom: 14px;
+        font-size: 26px;
+    }
 }
 
 .feedback__desc {
@@ -18,19 +27,28 @@ background-color: #F6F8F7;
     line-height: 1.1;
     text-align: center;
     color: #292E3D;
+
+    @media screen and (min-width: 1054px) {
+        margin-bottom: 27px;
+        font-size: 15px;
+    }
 }
 
 .feedback__form {
 margin: 0 auto;
 width: 250px;
 padding: 0 6px;
+
+@media screen and (min-width: 1054px) {
+width: 455px;
+padding: 2px 9px;
+}
 }
 
 .feedback__input {
 margin-bottom: 8px;
 display: inline-block;
 width: 112px;
-height: 16px;
 padding: 3px;
 background-color: var(--white-color);
 border: 1px solid #E0E3EB;
@@ -47,13 +65,21 @@ outline: none;
     color: #A3AAC2;
 };
 
-&::after {
-content: "*";
-display: block;
-background-color: #C40303;
-width: 4px;
-height: 4px;
-}
+@media screen and (min-width: 1054px) {
+    margin-bottom: 15px;
+    width: 204px;
+    font-size: 13px;
+    padding: 7px 6px;
+
+    &::placeholder {
+        font-size: 13px;
+        padding: 7px 6px;
+    }
+
+    .feedback__desc + & {
+        margin-right: 23px;
+    }
+    }
 }
 
 
@@ -61,11 +87,19 @@ height: 4px;
 font-size: 7px;
 line-height: 1.1;
 color: #A3AAC2;
+
+@media screen and (min-width: 1054px) {
+    font-size: 9px;
+}
 }
 
 .feedback__wrapper {
     display: inline-block;
     position: relative;
+
+    @media screen and (min-width: 1054px) {
+        margin-right: 23px;
+    }
 }
 
 .feedback__icon {
@@ -74,6 +108,12 @@ top: 6px;
 right: 4px;
 background-color: var(--white-color);
 pointer-events: none;
+
+@media screen and (min-width: 1054px) {
+    top: 7px;
+    width: 15px;
+    height: 15px;
+    }
 }
 
 .feedback__message {
@@ -94,6 +134,18 @@ color: #292E3D;
     line-height: 1.1;
     color: #A3AAC2;
 }
+
+@media screen and (min-width: 1054px) {
+    margin-bottom: 6px;
+    width: 437px;
+    height: 98px;
+    font-size: 13px;
+
+    &::placeholder {
+        font-size: 13px;
+        padding: 6px;
+    }
+    }
 }
 
 .feedback__explain {
@@ -101,6 +153,11 @@ color: #292E3D;
     font-size: 7px;
     line-height: 1.1;
     color: #929cc4;
+
+    @media screen and (min-width: 1054px) {
+        margin-bottom: 20px;
+        font-size: 11px;
+    }
 }
 
 .feedback__explain--accent {
@@ -112,7 +169,7 @@ color: #C40303;
 .feedback__button {
 margin: 0 auto;
 width: 108px;
-padding: 5px 12px;
+padding: 5px 0;
 background-color: var(--accent-color);
 font-weight: 500;
 font-size: 10px;
@@ -129,5 +186,11 @@ transition: scale 500ms ease-in;
     background-color: #929cc4;
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
+}
+
+@media screen and (min-width: 1054px) {
+    width: 198px;
+    font-size: 13px;
+    padding: 12px 0;
 }
 }

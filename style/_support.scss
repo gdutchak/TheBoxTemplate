@@ -20,9 +20,21 @@ background-repeat: no-repeat;
 @media screen and (min-width: 577px) and (max-width: 1053px){
     padding: 40px 0;
 }
+
+@media screen and (min-width: 1054px) {
+    padding: 72px 0;
+    background-image: url('../images/consultation-desktop.webp');
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../images/consultation-desktop-x2.webp');
+    }
+}
 }
 
 .support__title {
+    margin-bottom: 12px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
@@ -32,6 +44,11 @@ background-repeat: no-repeat;
         font-weight: 500;
         font-size: 12px;
     }
+
+    @media screen and (min-width: 1054px) {
+        margin-bottom: 22px;
+        font-size: 26px;
+    }
 }
 
 .support__desc {
@@ -39,6 +56,10 @@ background-repeat: no-repeat;
     font-size: 10px;
     line-height: 1.1;
     color: var(--white-color);
+
+    @media screen and (min-width: 1054px) {
+        font-size: 18px;
+    }
 }
 
 .support__link {
@@ -47,6 +68,10 @@ text-decoration: underline;
 font-size: 10px;
 line-height: 1.1;
 color: var(--white-color);
+
+@media screen and (min-width: 1054px) {
+    font-size: 18px;
+}
 }
 
 .support__button {
@@ -64,5 +89,12 @@ cursor: pointer;
 
 @media screen and (min-width: 577px) and (max-width: 1053px){
     width: 92px;
+}
+
+@media screen and (min-width: 1054px) {
+    margin-right: 35px;
+    width: 170px;
+    font-size: 13px;
+    padding: 12px;
 }
 }

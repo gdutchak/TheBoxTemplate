@@ -1,5 +1,9 @@
 .projects {
 padding: 35px 0 55px;
+
+@media screen and (min-width: 1054px) {
+    padding: 64px 0 100px;
+}
 }
 
 .projects__title {
@@ -8,6 +12,11 @@ padding: 35px 0 55px;
     font-size: 14px;
     line-height: 1.2;
     color: #292E3D;
+
+    @media screen and (min-width: 1054px) {
+        margin-bottom: 29px;
+        font-size: 26px;
+    }
 }
 
 .projects__item {
@@ -27,5 +36,13 @@ padding: 35px 0 55px;
 
     &:not(:last-child) {
         margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1054px) {
+        font-size: 18px;
+
+        &:not(:last-child) {
+            margin-bottom: 14px;
+        }
     }
 }
